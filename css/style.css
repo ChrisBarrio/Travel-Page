@@ -904,7 +904,7 @@ footer p a {
   color: var(--secondary-color);
 }
 
-@media (max-width: 481px) {
+@media (max-width: 480px) {
   html {
     font-size: 60%;
   }
