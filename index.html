@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!----- Boxicons ----->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Travel & Tours</title>
+</head>
+<body>
+    <header>
+        <h1 /*class="animate__animated"*/><strong>T</strong>ravel & <strong>T</strong>ours</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Book</a>
+            <a href="#">Packages</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Review</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div>
+            <i class='btn_search bx bx-search-alt bx-md'></i>
+            <i class='btn_user bx bx-user bx-md' ></i>
+            <i class='btn_menu bx bx-menu bx-md'></i>
+        </div>
+    </header><!-- end Header -->
+
+    <div class="bar_search">
+        <input type="search" name="" id="" placeholder=">>> search here <<<">
+        <i class='bx bx-search-alt bx-md'></i>
+    </div><!-- end bar_search -->
+
+    <div class="login_user">
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <div>
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+            </div>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+    </div><!-- end login_user -->
+
+    <section class="home" name="home">
+        <video src="./images/home-video.mp4" loop="loop" autoplay="autoplay"></video>
+        <div>
+            <h2>ADVENTURE IS WORTHWHILE</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem sed temporibus <br>ab officia animi assumenda reprehenderit consectetur magni ipsum? Voluptas?</p>
+            <a href="#">Discover More</a>
+        </div>
+    </section><!--end Home -->
+
+    <section class="book_now">
+        <h2>
+            <div>
+                <span>B</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+            </div>
+            <div>    
+                <span>N</span>
+                <span>o</span>
+                <span>w</span>
+            </div>
+        </h2>
+        <div>
+            <div>
+               <img src="./images/book-img.svg" alt="persona por viajar"> 
+            </div>
+            <div>
+                <form action="" method="post">
+                    <label for="">Where To</label>
+                    <input type="text" name="Where to" id="#" placeholder="destination">
+
+                    <label for="">How Many</label>
+                    <input type="number" name="How Many" id="#" placeholder="number of guests" min="1" pattern="^[0-9]+">
+
+                    <label for="">Arrivals</label>
+                    <input type="date" name="Arrivals" id="#">
+
+                    <label for="">Leaving</label>
+                    <input type="date" name="Leaving" id="#">
+
+                    <a href="#">Book Now</a>
+                </form>
+            </div>
+        </div>
+    </section><!-- end BookNow -->
+
+    <section class="packages">
+        <h2>
+            <div>
+                <span>P</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </div>
+        </h2>
+        <div class="container_packs">
+            <div class="pack">
+                <img src="./images/p-1.jpg" alt="mumbai">
+                <h3 class='bx bxs-map'>Mumbai</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="pack">
+                <img src="./images/p-2.jpg" alt="Hawaii">
+                <h3 class='bx bxs-map'>Hawaii</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="pack">
+                <img src="./images/p-3.jpg" alt="Sydney">
+                <h3 class='bx bxs-map'>Sydney</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="pack">
+                <img src="./images/p-4.jpg" alt="Paris">
+                <h3 class='bx bxs-map'>Paris</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="pack">
+                <img src="./images/p-5.jpg" alt="Tokyo">
+                <h3 class='bx bxs-map'>Tokyo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+
+            <div class="pack">
+                <img src="./images/p-6.jpg" alt="Egypt">
+                <h3 class='bx bxs-map'>Egypt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, excepturi.</p>
+                <div><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star bx-md'></i><i class='bx bxs-star-half bx-md' ></i></div>
+                <p class="price"> $90.00 <strong>$120.00</strong></p>
+                <a href="#">Book Now</a>
+            </div>
+        </div>
+    </section><!-- end packages-->
+
+    <section class="services">
+        <h2>
+            <div>
+                <span>S</span>
+                <span>e</span>
+                <span>r</span>
+                <span>v</span>
+                <span>i</span>
+                <span>c</span>
+                <span>e</span>
+                <span>s</span>
+            </div>
+        </h2>
+        <div class="services_packs">
+            <div class="pack">
+                <i class='bx bxs-hotel bx-lg'></i>
+                <h3>Affordable Hotels</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>
+            </div>
+
+            <div class="pack">
+                <div class="pack">
+                    <i class='bx bxs-bowl-hot bx-lg'></i>
+                    <h3>Food And Drinks</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>
+                </div>
+            </div>
+
+            <div class="pack">
+                <i class='bx bxs-user-voice bx-lg'></i>
+                <h3>Safty Guide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>
+            </div>
+
+            <div class="pack">
+                <i class='bx bx-world bx-lg'></i>
+                <h3>Around The World</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>               
+            </div>
+
+            <div class="pack">
+                <i class='bx bxs-plane-alt bx-lg'></i>
+                <h3>Fastest Travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>  
+            </div>
+
+            <div class="pack">
+                <i class='bx bx-walk bx-lg'></i>
+                <h3>Adventures</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique aliquam unde eligendi aut numquam consequuntur iste beatae eaque velit.</p>
+            </div>
+        </div>
+    </section><!-- end services-->
+
+    <section class="gallery">
+        <h2>
+            <div>
+                <span>G</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>
+            </div>
+        </h2>
+        <div class="gallery_packs">
+            <div class="pack">
+                <img src="./images/g-1.jpg" alt="playa">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-2.jpg" alt="mar">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-3.jpg" alt="atenas">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-4.jpg" alt="tailandia">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-5.jpg" alt="niza">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-6.jpg" alt="playa">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-7.jpg" alt="globos aerostaticos">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+
+            <div class="pack">
+                <img src="./images/g-8.jpg" alt="camping">
+                <div class="pack_text">
+                    <h3>Affordable Hotels</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quisquam.</p>
+                    <a href="#">See more</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- end gallery-->
+
+    <section class="review">
+        <h2>
+            <div>
+                <span>R</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>
+            </div>
+        </h2>
+        <div class="swiper mySwiperReview">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./images/pic1.png" alt="">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                  <div>
+                    <i class='bx bxs-star bx-md'></i>
+                    <i class='bx bxs-star bx-md'></i>
+                    <i class='bx bxs-star bx-md'></i>
+                    <i class='bx bxs-star bx-md'></i>
+                    <i class='bx bxs-star bx-md'></i>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pic2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                <div>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pic3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                <div>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pic4.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                <div>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pic1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                <div>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/pic2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusantium incidunt est, illo magnam vitae in inventore quisquam natus adipisci!</p>
+                <div>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                  <i class='bx bxs-star bx-md'></i>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </section><!-- end review-->
+
+    <section class="contact">
+        <h2>
+            <div>
+                <span>C</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>c</span>
+                <span>t</span>
+            </div>
+        </h2>
+        <div>
+            <div>
+               <img src="./images/contact-img.svg" alt="avion"> 
+            </div>
+            <div>
+                <form action="" method="post">
+                    <div>
+                        <input type="text" name="name" id="#" placeholder="Name">
+
+                        <input type="email" name="email" id="#" placeholder="email">
+                    </div>    
+                    <div>
+                        <input type="number" name="number" id="#" placeholder="number of guests" min="1" pattern="^[0-9]+">
+
+                        <input type="text" name="subject" placeholder = "Subject" id="#">
+                    </div>    
+                    <textarea name="" placeholder="message" id="" cols="30" rows="10"></textarea>
+
+
+                    <a href="#">Send Message</a>
+                </form>
+            </div>
+        </div>
+    </section><!-- end contact-->
+
+    <section class="adds">
+        <div class="swiper mySwiperAdds">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="./images/1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./images/2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./images/3.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./images/4.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./images/5.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                  <img src="./images/6.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./images/6.jpg" alt="">
+            </div>
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+    </section><!-- end adds-->
+
+    <footer>
+        <div>
+            <div>
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus enim nobis ratione harum ad. Quas tempora quibusdam cupiditate cum laudantium?</p>
+            </div>
+            <div>
+                <h3>Branch Locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">Italia</a>
+                <a href="#">Spain</a>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#">Book</a>
+                <a href="#">Packages</a>
+                <a href="#">Services</a>
+                <a href="#">Gallery</a>
+                <a href="#">Review</a>
+                <a href="#">Contact</a>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Youtube</a>
+            </div>
+        </div>
+        <hr>
+        <p>Created by <a href="https://www.linkedin.com/in/christianbarrionuevo/" target="_blank">ChrisBarrio</a> | 🤙🏽 </p>
+    </footer>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/app.js"></script>    
+</body>
+</html>
