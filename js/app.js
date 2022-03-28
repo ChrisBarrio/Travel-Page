@@ -66,7 +66,7 @@ var swiper = new Swiper(".mySwiperReview", {
       spaceBetween: 20
     },
     // when window width is >= 480px
-    480: {
+    420: {
       slidesPerView: 1,
       spaceBetween: 30
     },
@@ -105,7 +105,7 @@ var swiper = new Swiper(".mySwiperAdds", {
       spaceBetween: 20
     },
     // when window width is >= 480px
-    480: {
+    420: {
       slidesPerView: 2,
       spaceBetween: 30
     },

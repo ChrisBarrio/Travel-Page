@@ -674,7 +674,7 @@ footer{
 // ---------- MEdiasQueries----------
 //--mobile--
 
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 420px)  {
     html{
         font-size:45%;
     }
@@ -800,6 +800,108 @@ footer{
         }
     
     }//-- end Book Now --
+
+    .packages{
+        display: block;
+        & h2{
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            & span{
+                color: var(--secondary-color);
+                font-size: var(--FontSize-xxl);
+                padding: 1rem;
+                margin:.5rem;
+                background-color: rgba(241, 151, 66, 0.2);
+            }
+        }
+    
+        & .container_packs{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-gap:3rem;
+            padding: 4rem;
+            & .pack{
+                // border-radius: 2rem;
+                // padding: 2rem;
+                & img{
+                    border-radius: 2rem;
+                    width: 100%;
+                }
+                & h3{
+                    color:var(--main-color);
+                    font-size: var(--FontSize-l);
+                    padding: 1rem 0;
+                }
+                & p{
+                    font-size: var(--FontSize-m);
+                    padding: 1rem 0;
+                }
+                & div{
+                    & i{
+                        color: goldenrod;
+                    }
+                }
+                & .price{
+                    font-size: var(--FontSize-l);
+                    padding: 1rem 0 2rem 0;
+                    & strong{
+                        text-decoration:line-through;
+                        color: var(--secondary-color);
+                        font-size: var(--FontSize-m)
+                    }
+                }
+                & a{
+                    @include btn_principal;
+                    &:hover{
+                        color: var(--main-color)
+                    }
+                }
+            }
+        }
+    }//-- end packages--
+
+    .services{
+        display: block;
+        & h2{
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            & span{
+                color: var(--secondary-color);
+                font-size: var(--FontSize-xxl);
+                padding: 1rem;
+                margin:.5rem;
+                background-color: rgba(241, 151, 66, 0.2);
+            }
+        }
+    
+        & .services_packs{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            grid-gap:3rem;
+            padding: 4rem;
+            & .pack{
+                text-align: center;
+                & i{
+                    color: var(--secondary-color);
+                }
+                & h3{
+                    color:var(--main-color);
+                    font-size: var(--FontSize-l);
+                    padding: 1rem 0;
+                }
+                & p{
+                    font-size: var(--FontSize-m);
+                    padding: 1rem ;
+                }
+                &:hover{
+                    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                }
+            }
+    
+        }
+    }//-- end services--
     
     .contact{
         display: block;

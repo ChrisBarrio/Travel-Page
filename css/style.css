@@ -904,7 +904,7 @@ footer p a {
   color: var(--secondary-color);
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 420px) {
   html {
     font-size: 45%;
   }
@@ -1072,6 +1072,118 @@ footer p a {
   .book_now div div form a:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .packages {
+    display: block;
+  }
+  .packages h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+  .packages h2 span {
+    color: var(--secondary-color);
+    font-size: var(--FontSize-xxl);
+    padding: 1rem;
+    margin: .5rem;
+    background-color: rgba(241, 151, 66, 0.2);
+  }
+  .packages .container_packs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 3rem;
+    padding: 4rem;
+  }
+  .packages .container_packs .pack img {
+    border-radius: 2rem;
+    width: 100%;
+  }
+  .packages .container_packs .pack h3 {
+    color: var(--main-color);
+    font-size: var(--FontSize-l);
+    padding: 1rem 0;
+  }
+  .packages .container_packs .pack p {
+    font-size: var(--FontSize-m);
+    padding: 1rem 0;
+  }
+  .packages .container_packs .pack div i {
+    color: goldenrod;
+  }
+  .packages .container_packs .pack .price {
+    font-size: var(--FontSize-l);
+    padding: 1rem 0 2rem 0;
+  }
+  .packages .container_packs .pack .price strong {
+    text-decoration: line-through;
+    color: var(--secondary-color);
+    font-size: var(--FontSize-m);
+  }
+  .packages .container_packs .pack a {
+    padding: 1rem;
+    font-size: var(--FontSize-m);
+    color: var(--white);
+    background-color: var(--secondary-color);
+    border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 2px solid var(--secondary-color);
+  }
+  .packages .container_packs .pack a:hover {
+    color: var(--main-color);
+  }
+  .services {
+    display: block;
+  }
+  .services h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+  }
+  .services h2 span {
+    color: var(--secondary-color);
+    font-size: var(--FontSize-xxl);
+    padding: 1rem;
+    margin: .5rem;
+    background-color: rgba(241, 151, 66, 0.2);
+  }
+  .services .services_packs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 3rem;
+    padding: 4rem;
+  }
+  .services .services_packs .pack {
+    text-align: center;
+  }
+  .services .services_packs .pack i {
+    color: var(--secondary-color);
+  }
+  .services .services_packs .pack h3 {
+    color: var(--main-color);
+    font-size: var(--FontSize-l);
+    padding: 1rem 0;
+  }
+  .services .services_packs .pack p {
+    font-size: var(--FontSize-m);
+    padding: 1rem;
+  }
+  .services .services_packs .pack:hover {
+    -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
   .contact {
     display: block;
