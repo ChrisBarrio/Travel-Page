@@ -183,6 +183,7 @@ header{
             width: 90%;
             padding: 1rem;
             margin: 1rem;
+            text-transform: none;
         }
         & input[type='submit']{
             background-color: var(--secondary-color);
@@ -287,7 +288,7 @@ header{
                         font-size: var(--FontSize-m)
                     }
                 }
-                & a{
+                & button{
                     @include btn_principal;
                     margin-top: 2rem;
                     &:hover{
@@ -322,9 +323,14 @@ header{
         grid-gap:3rem;
         padding: 4rem;
         & .pack{
-            // border-radius: 2rem;
-            // padding: 2rem;
             & img{
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                animation: show 2s 1s forwards;
+                @keyframes show {
+                    to{
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                    }
+                }
                 border-radius: 2rem;
                 width: 100%;
             }
@@ -475,6 +481,7 @@ header{
 
 .review{
     display: block;
+    margin: 2rem 0;
     & h2{
         display: flex;
         justify-content: center;
@@ -671,12 +678,12 @@ footer{
     }
 }// -- end footer--
 
-// ---------- MEdiasQueries----------
+// ---------- Media Queries----------
 //--mobile--
 
 @media only screen and (max-width: 420px)  {
     html{
-        font-size:45%;
+        font-size:50%;
     }
     header{
         
@@ -743,8 +750,12 @@ footer{
             width: 95%;
             height: 100%;
             border-radius: .5rem;
+            text-transform: none;
             &[placeholder]{
-                padding-left: 45%;
+                padding-left: 32%;
+            }
+            &:focus{
+                border: 2px solid;
             }
         }
         & i{
@@ -756,7 +767,7 @@ footer{
         }
     
         &.active{
-            top: 6%;
+            top: 7%;
         }
     
     }//-- end bar-search --
@@ -815,6 +826,7 @@ footer{
     }//-- end Login_user --
 
     .home{
+        display: none; // no se  muestra
         & video{
             width: 100%;
             top: -10rem;left: 0;
@@ -826,32 +838,34 @@ footer{
     }//-- end Home -- 
 
     .book_now{
-        display: block;
+        display:block;
         & h2{
-            display: flex;
+            display: none;
             justify-content: center;
             padding: 2rem;
             & span{
                 color: var(--secondary-color);
                 font-size: var(--FontSize-xxl);
-                padding: 1rem;
+                padding: .5rem;
                 margin:.5rem;
                 background-color: rgba(241, 151, 66, 0.2);
             }
         }
         & div{
-            display: block;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
             width: 100%;
             & div{
                 display:none;
                 & img{
-                    display: flex;
+                    display: none;
+                    width: 100%;
                 }
             }
             & div{
                 display: flex;
                 width: 100%;
+
                 & form{
                     width: 100%;
                     color: var(--black);
@@ -859,7 +873,7 @@ footer{
                     flex-direction: column;
                     justify-content: center;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-                    padding: 4rem;
+                    // padding: 4rem;
                     & label{
                         padding: .5rem 0;
                         font-size: var(--FontSize-l);
@@ -907,10 +921,11 @@ footer{
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             grid-gap:3rem;
-            padding: 4rem;
+            justify-content: center;
+            // padding: 4rem;
             & .pack{
                 // border-radius: 2rem;
-                // padding: 2rem;
+                padding: 2rem 0;
                 & img{
                     border-radius: 2rem;
                     width: 100%;
@@ -949,7 +964,9 @@ footer{
     }//-- end packages--
 
     .services{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         & h2{
             display: flex;
             justify-content: center;
@@ -1007,7 +1024,6 @@ footer{
         & div{
             display: block;
             justify-content: center;
-            padding: 2rem;
             & div{
                 width: 100%;
                 & img{
@@ -1039,6 +1055,9 @@ footer{
                             &::placeholder{
                                 font-size: var(--FontSize-m);
                             }
+                            &:focus{
+                                border:2px solid orange;
+                            }
                         }
                     }
                     & textarea{
@@ -1046,7 +1065,9 @@ footer{
                         border: none;
                         margin: 1rem;
                         padding: 1rem;
-    
+                        &:focus{
+                            border:2px solid orange;
+                        }
                     }
                     & a{
                         @include btn_principal;
@@ -1118,3 +1139,4 @@ footer{
     }// -- end footer--
 
 }
+

@@ -42,8 +42,8 @@
     <div class="login_user">
         <form action="">
             <h3>login</h3>
-            <input type="email" class="box" placeholder="enter your email">
-            <input type="password" class="box" placeholder="enter your password">
+            <input type="email" class="box" placeholder="enter your email" required>
+            <input type="password" class="box" placeholder="enter your password" required>
             <input type="submit" value="login now" class="btn">
             <div>
                 <input type="checkbox" id="remember">
@@ -79,23 +79,23 @@
         </h2>
         <div>
             <div>
-               <img src="./images/book-img.svg" alt="persona por viajar"> 
+                <img src="./images/book-img.svg" alt="persona por viajar"> 
             </div>
             <div>
                 <form action="" method="post">
                     <label for="">Where To</label>
-                    <input type="text" name="Where to" id="#" placeholder="destination">
+                    <input type="text" name="Where to" id="#" placeholder="destination" required>
 
                     <label for="">How Many</label>
-                    <input type="number" name="How Many" id="#" placeholder="number of guests" min="1" pattern="^[0-9]+">
+                    <input type="number" name="How Many" id="#" placeholder="number of guests" min="1" pattern="^[0-9]+" required>
 
                     <label for="">Arrivals</label>
-                    <input type="date" name="Arrivals" id="#">
+                    <input type="date" name="Arrivals" id="#" required>
 
                     <label for="">Leaving</label>
-                    <input type="date" name="Leaving" id="#">
+                    <input type="date" name="Leaving" id="#" required>
 
-                    <a href="#">Book Now</a>
+                    <button type="submit" href="#">Book Now</button>
                 </form>
             </div>
         </div>

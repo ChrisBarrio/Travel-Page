@@ -208,6 +208,7 @@ header div .btn_menu {
   width: 90%;
   padding: 1rem;
   margin: 1rem;
+  text-transform: none;
 }
 
 .login_user form input[type='submit'] {
@@ -379,7 +380,7 @@ header div .btn_menu {
   font-size: var(--FontSize-m);
 }
 
-.book_now div div form a {
+.book_now div div form button {
   padding: 1rem;
   font-size: var(--FontSize-m);
   color: var(--white);
@@ -392,7 +393,7 @@ header div .btn_menu {
   margin-top: 2rem;
 }
 
-.book_now div div form a:hover {
+.book_now div div form button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -429,8 +430,26 @@ header div .btn_menu {
 }
 
 .packages .container_packs .pack img {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-animation: show 2s 1s forwards;
+          animation: show 2s 1s forwards;
   border-radius: 2rem;
   width: 100%;
+}
+
+@-webkit-keyframes show {
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes show {
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 .packages .container_packs .pack h3 {
@@ -633,6 +652,7 @@ header div .btn_menu {
 
 .review {
   display: block;
+  margin: 2rem 0;
 }
 
 .review h2 {
@@ -906,7 +926,7 @@ footer p a {
 
 @media only screen and (max-width: 420px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
   header nav {
     display: -webkit-box;
@@ -991,9 +1011,13 @@ footer p a {
     width: 95%;
     height: 100%;
     border-radius: .5rem;
+    text-transform: none;
   }
   .bar_search input[placeholder] {
-    padding-left: 45%;
+    padding-left: 32%;
+  }
+  .bar_search input:focus {
+    border: 2px solid;
   }
   .bar_search i {
     padding-left: 1rem;
@@ -1004,7 +1028,7 @@ footer p a {
             transform: scale(1.1);
   }
   .bar_search.active {
-    top: 6%;
+    top: 7%;
   }
   .login_user {
     display: -webkit-box;
@@ -1073,6 +1097,9 @@ footer p a {
   .login_user.active {
     top: 5%;
   }
+  .home {
+    display: none;
+  }
   .home video {
     width: 100%;
     top: -10rem;
@@ -1086,9 +1113,7 @@ footer p a {
     display: block;
   }
   .book_now h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1097,24 +1122,26 @@ footer p a {
   .book_now h2 span {
     color: var(--secondary-color);
     font-size: var(--FontSize-xxl);
-    padding: 1rem;
+    padding: .5rem;
     margin: .5rem;
     background-color: rgba(241, 151, 66, 0.2);
   }
   .book_now div {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .book_now div div {
     display: none;
   }
   .book_now div div img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
+    width: 100%;
   }
   .book_now div div {
     display: -webkit-box;
@@ -1137,7 +1164,6 @@ footer p a {
             justify-content: center;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    padding: 4rem;
   }
   .book_now div div form label {
     padding: .5rem 0;
@@ -1202,7 +1228,12 @@ footer p a {
     -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 3rem;
-    padding: 4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .packages .container_packs .pack {
+    padding: 2rem 0;
   }
   .packages .container_packs .pack img {
     border-radius: 2rem;
@@ -1244,7 +1275,16 @@ footer p a {
     color: var(--main-color);
   }
   .services {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .services h2 {
     display: -webkit-box;
@@ -1313,7 +1353,6 @@ footer p a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 2rem;
   }
   .contact div div {
     width: 100%;
@@ -1371,11 +1410,17 @@ footer p a {
   .contact div div form div input::placeholder {
     font-size: var(--FontSize-m);
   }
+  .contact div div form div input:focus {
+    border: 2px solid orange;
+  }
   .contact div div form textarea {
     background-color: rgba(150, 146, 146, 0.2);
     border: none;
     margin: 1rem;
     padding: 1rem;
+  }
+  .contact div div form textarea:focus {
+    border: 2px solid orange;
   }
   .contact div div form a {
     padding: 1rem;
